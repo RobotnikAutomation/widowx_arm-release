@@ -1,0 +1,12 @@
+Source: ros-indigo-widowx-arm-description
+Section: misc
+Priority: extra
+Maintainer: Jose Rapado García <jmrapado@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/widowx_arm_description
+Standards-Version: 3.9.2
+
+Package: ros-indigo-widowx-arm-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The widowx_arm_description package
