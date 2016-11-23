@@ -1,0 +1,16 @@
+ros-indigo-widowx-arm (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Román Navarro <rnavarro@robotnik.es>  Tue, 22 Nov 2016 23:00:00 -0000
+
+ros-indigo-widowx-arm (0.0.1-0trusty) trusty; urgency=high
+
+  * Modified package.xml
+  * Modified package.xml files
+  * Fist commit
+  * Contributors: RomanRobotnik, carlos3dx
+
+ -- Román Navarro <rnavarro@robotnik.es>  Mon, 08 Aug 2016 22:00:00 -0000
+
+
