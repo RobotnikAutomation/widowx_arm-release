@@ -1,0 +1,22 @@
+ros-indigo-widowx-arm-description (0.0.2-0saucy) saucy; urgency=high
+
+  * modified cmakelists and package.xml
+  * DEL: urdf and xacro files
+  * MOD: changed launch
+  * NEW: renamed widowx_macro.xacro to widowx.urdf.xacro, created robots/widowx_arm.urdf.xacro
+  * Contributors: Jose Rapado, carlos3dx
+
+ -- Jose Rapado García <jmrapado@robotnik.es>  Tue, 22 Nov 2016 23:00:00 -0000
+
+ros-indigo-widowx-arm-description (0.0.1-0saucy) saucy; urgency=high
+
+  * Modified package.xml
+  * Modified package.xml files
+  * minor changes
+  * Adding move to gripper joint
+  * Adding widowx_arm_description
+  * Contributors: Jose Rapado, carlos3dx
+
+ -- Jose Rapado García <jmrapado@robotnik.es>  Mon, 08 Aug 2016 22:00:00 -0000
+
+
