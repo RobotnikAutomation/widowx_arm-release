@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
    <property name="M_SCALE" value="0.001"/>
    <property name="M_PI" value="3.14159"/>
+   
    <xacro:include filename="$(find widowx_arm_description)/urdf/common_materials.xacro" />
 
    <!--link name="plate_top_link"/-->
@@ -10,7 +11,7 @@
       <child link="ph_base_link" />
    </joint-->
 
-   <xacro:macro name="widowx_arm" params="prefix">
+   <xacro:macro name="widowx_arm" params="parent prefix *origin">
       <!-- links -->
       <link name="${prefix}arm_base_link">
          <visual>
@@ -195,12 +196,11 @@
          </inertial>
       </link>
       <!-- joints -->
-      <!--joint name="${prefix}arm_base_joint" type="fixed">
-         <origin xyz="${M_SCALE*14.5} ${M_SCALE*0.2} ${M_SCALE*0.2}" rpy="${M_PI*0} ${M_PI*0} ${-M_PI/2}" />
-         <parent link="plate_top_link" />
+      <joint name="${prefix}arm_base_joint" type="fixed">
+         <insert_block name="origin" />
+         <parent link="${parent}" />
          <child link="${prefix}arm_base_link"/>
-         <axis xyz="0 1 0" />
-      </joint-->
+      </joint>
       <joint name="${prefix}joint_1" type="revolute">
          <origin xyz="0 0 ${M_SCALE*125}" rpy="0 0 0" />
          <parent link="${prefix}arm_base_link" />
